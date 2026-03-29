@@ -176,9 +176,7 @@
 
       /* Style the button that opens the color settings panel. */
       .theme-toggle {
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
+        position: static;
         z-index: 7;
         width: 24px;
         height: 24px;
@@ -300,8 +298,6 @@
   <body>
     <!-- Main widget container. -->
     <div class="card" id="widgetCard">
-      <!-- Button that opens the color settings panel. -->
-      <button id="themeToggle" class="theme-toggle" aria-label="Open color settings" type="button">🔮</button>
 
       <!-- Panel that lets the user change widget colors. -->
       <div id="themePanel" class="theme-panel" aria-label="Color settings">
@@ -356,6 +352,8 @@
         <button class="mode-button active" data-mode="60" type="button">60 min</button>
         <button class="mode-button" data-mode="30" type="button">30 min</button>
         <button class="mode-button" data-mode="10" type="button">10 min</button>
+         <!-- Button that opens the color settings panel. -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Open color settings" type="button">🔮</button>
       </div>
 
       <!-- Empty layer where confetti is added when the timer ends. -->
